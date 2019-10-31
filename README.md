@@ -147,7 +147,7 @@ return [
 ];
 ```
 
-### Feito isso vá até seu banco e altere sua url base
+###  6 - Feito isso vá até seu banco e altere sua url base
 ```
 Procure pela tabela: core_config_data
 Procure pelo campo: path - web/unsecure/base_url
@@ -173,6 +173,38 @@ Acesse o endereço da sua aplicação, a tela é para estar parecida com essa aq
 ### Acesso ao admin
 SUA_URL/admin_8xq1vd
 
-
 User: **admin** 
 Password : **admin123**
+
+
+## Quer fazer uma instalação limpa?
+
+Configure as linhas abaixo de acordo com seu ambiente:
+
+     sudo bin/magento setup:install \
+    --base-url=http://sua-url.com \
+    --db-host=localhost \
+    --db-name=magento2 \
+    --db-user=magento \
+    --db-password=magento \
+    --backend-frontname=admin \
+    --admin-firstname=admin \
+    --admin-lastname=admin \
+    --admin-email=admin@admin.com \
+    --admin-user=admin \
+    --admin-password=admin123 \
+    --language=pt_BR \
+    --currency=BRL \
+    --timezone=America/Sao_Paulo \
+    --use-rewrites=1 
+    
+## Terminado o processo o Magento2 estará instalado.
+
+
+# Referências
+
+[Install Magento using Composer](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html)
+
+
+
+
