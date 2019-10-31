@@ -2,7 +2,7 @@
 
 Olá! Siga o passo à passo para rodar o projeto em seu ambiente. Estou disponibilizando o dump do banco para demonstração do conteúdo cadastrado.
 
-[Clique aqui para baixar o Banco](%5Benter%20code%20here%5D%28https://drive.google.com/file/d/1_2s3R-rXA6_ysxkpXwY6UycYx3xg-X-5/view?usp=sharing%29)
+[Clique aqui para baixar o Banco](https://drive.google.com/file/d/1_2s3R-rXA6_ysxkpXwY6UycYx3xg-X-5/view?usp=sharing%29)
 
 Para testes em localhost recomendo configurar o seu webserver com um virtual host.
 Utilizando o Apache adicionei a seguinte configuração:
@@ -51,7 +51,7 @@ Dentro do diretório do projeto rode:
 -   Linha de comando
 -   Web Setup Wizard
 
-Contudo, afim de que você utilize o [banco](%5Benter%20code%20here%5D%28https://drive.google.com/file/d/1_2s3R-rXA6_ysxkpXwY6UycYx3xg-X-5/view?usp=sharing%29) que disponibilizei, vamos precisar realizar mais alguns passos: 
+Contudo, afim de que você utilize o [banco](https://drive.google.com/file/d/1_2s3R-rXA6_ysxkpXwY6UycYx3xg-X-5/view?usp=sharing%29) que disponibilizei, vamos precisar realizar mais alguns passos: 
 
 ### 5 - Configure o arquivo env.php
 
@@ -167,8 +167,7 @@ Rode os seguintes comandos
 ## Tudo certo?
 
 Acesse o endereço da sua aplicação, a tela é para estar parecida com essa aqui:
-
-[imagem]
+![home](https://github.com/olucasu/magento2/blob/master/screenshots/home.png)
 
 
 ### Acesso ao admin
