@@ -1,10 +1,10 @@
 # Instalação do Magento 2.3.3
 
-Olá! Siga o passo à passo para rodar o projeto em seu ambiente. Estou disponibilizando o dump do banco para demonstração do conteúdo cadastrado.
+Olá! Siga o passo à passo para rodar o projeto em seu ambiente. Estou disponibilizando o dump do meu banco para demonstração do conteúdo cadastrado.
 
-[Clique aqui para baixar o Banco](https://drive.google.com/file/d/1_2s3R-rXA6_ysxkpXwY6UycYx3xg-X-5/view?usp=sharing%29)
+<a href="https://drive.google.com/file/d/1_2s3R-rXA6_ysxkpXwY6UycYx3xg-X-5/view?usp=sharing%29" target="_blank">Clique aqui para baixar o dump do banco</a>
 
-Para testes em localhost recomendo configurar o seu webserver com um virtual host.
+Para testes em **localhost** recomendo configurar o seu webserver com um virtual host.
 Utilizando o Apache adicionei a seguinte configuração:
 
 /etc/apache2/sites-available/000-default.conf:
@@ -24,6 +24,7 @@ Utilizando o Apache adicionei a seguinte configuração:
 Caso o endereço que você configurar já exista na web, adicione-o ao arquivo de hosts de seu ambiente:
 
     127.0.0.1   dev.magento2.com.br
+    
 
 ## Instalação
 ### 1- Clone o repositório
@@ -51,7 +52,7 @@ Dentro do diretório do projeto rode:
 -   Linha de comando
 -   Web Setup Wizard
 
-Contudo, afim de que você utilize o [banco](https://drive.google.com/file/d/1_2s3R-rXA6_ysxkpXwY6UycYx3xg-X-5/view?usp=sharing%29) que disponibilizei, vamos precisar realizar mais alguns passos: 
+Contudo, afim de que você utilize o <a href="https://drive.google.com/file/d/1_2s3R-rXA6_ysxkpXwY6UycYx3xg-X-5/view?usp=sharing%29" target="_blank">Banco</a> que disponibilizei, vamos precisar realizar mais alguns passos: 
 
 ### 5 - Configure o arquivo env.php
 
@@ -151,7 +152,7 @@ return [
 ```
 Procure pela tabela: core_config_data
 Procure pelo campo: path - web/unsecure/base_url
-altere o campo value nessa mesma para a URL que você configurou
+altere o campo value nessa mesma linha, para a URL que você configurou
 ```
 
 Uma vez feito isso, limpe o cache da aplicação:
@@ -178,8 +179,9 @@ Password : **admin123**
 
 
 ## Quer fazer uma instalação limpa?
+Vamos fazer uma instalação via linha de comando. Atente-se para as informações de url e acesso a banco de dados.
 
-Configure as linhas abaixo de acordo com seu ambiente:
+Na raiz do projeto rode
 
      sudo bin/magento setup:install \
     --base-url=http://sua-url.com \
@@ -199,6 +201,8 @@ Configure as linhas abaixo de acordo com seu ambiente:
     --use-rewrites=1 
     
 ## Terminado o processo o Magento2 estará instalado.
+
+Acesse sua URL configurada para projeto e um abraço!
 
 
 # Referências
